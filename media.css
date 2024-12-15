@@ -1,4 +1,11 @@
 @media (max-width: 768px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* lol it worked hahahah */ 
+        padding: 0;
+    }
     #count {
         padding: 125px 0;
     }
