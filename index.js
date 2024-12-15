@@ -2,10 +2,9 @@
 const tapCount = document.getElementById('tapCount');
 const resetButton = document.getElementById('resetButton');
 
-// Initialize the count variable
+
 let count = 0;
 
-// Add an event listener to the body for tap (click) events
 document.body.addEventListener('click', (event) => {
     if (event.target !== resetButton) {
         count++;
@@ -13,12 +12,10 @@ document.body.addEventListener('click', (event) => {
     }
 });
 
-// Add an event listener to the reset button
 resetButton.addEventListener('click', () => {
-    // Reset the count to 0
+    // reset
     count = 0;
 
-    // Update the text content of the span
     tapCount.textContent = count;
 });
 
